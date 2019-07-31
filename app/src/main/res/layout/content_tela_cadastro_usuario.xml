@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Telas.TelaCadastroUsuario"
+    tools:showIn="@layout/activity_tela_cadastro_usuario">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="28dp" />
+
+    <Button
+        android:id="@+id/btnVoltarCadastroUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_VoltarCadastroUsuario"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnConcluirCadastroUsuario"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="490dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <Button
+        android:id="@+id/btnConcluirCadastroUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnConcluirCadastroUsuario"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/btnVoltarCadastroUsuario"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <TextView
+        android:id="@+id/textViewNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textViewNomeUsuario"
+        app:layout_constraintBottom_toTopOf="@id/textViewSobreNomeUsuario"
+        app:layout_constraintRight_toLeftOf="@id/editText_CampoNome"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textViewSobreNomeUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textViewSobreNomeUsuario"
+        app:layout_constraintBottom_toTopOf="@id/textViewNascimento"
+        app:layout_constraintRight_toLeftOf="@id/editText_CampoSobrenome"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeUsuario" />
+
+    <EditText
+        android:id="@+id/editText_CampoNome"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/editText_CampoNome"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSobreNomeUsuario"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toEndOf="@+id/textViewNomeUsuario" />
+
+    <EditText
+        android:id="@+id/editText_CampoSobrenome"
+        android:layout_width="213dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:hint="@string/editText_CampoSobrenome"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/textViewSobreNomeUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CampoNome" />
+
+    <EditText
+        android:id="@+id/editText_CampoNascimento"
+        android:layout_width="210dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/editText_CampoNascimento"
+        android:inputType="date"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@id/editText_CampoNascimento"
+        app:layout_constraintStart_toEndOf="@+id/textViewNascimento"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/textViewNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textViewNascimento"
+        app:layout_constraintBottom_toTopOf="@id/textViewRG"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSobreNomeUsuario" />
+
+    <TextView
+        android:id="@+id/textViewRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textViewRG"
+        app:layout_constraintRight_toLeftOf="@id/editText_CampoRG"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNascimento" />
+
+    <EditText
+        android:id="@+id/editText_CampoRG"
+        android:layout_width="210dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toEndOf="@+id/textViewRG"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CampoNascimento" />
+
+</android.support.constraint.ConstraintLayout>

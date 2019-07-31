@@ -6,13 +6,124 @@
     android:layout_height="match_parent"
     tools:context="com.example.aluno.meemprestaai.MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/editText_NomeUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/editText_NomeUsuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/textView_Senha"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Usuario"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/textView_Senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textView_Senha"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/editText_CampoSenha"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/editText_NomeUsuario" />
+
+    <EditText
+        android:id="@+id/editText_CampoSenha"
+        android:layout_width="290dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/editText_CampoSenha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/btn_Logar"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Senha"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/textView_Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/textView_Usuario"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/editText_NomeUsuario"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopo" />
+
+    <Button
+        android:id="@+id/btn_Logar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_Logar"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBaixo"
+        app:layout_constraintEnd_toStartOf="@+id/btn_CadastrarUsuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CampoSenha" />
+
+    <Button
+        android:id="@+id/btn_CadastrarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btn_CadastrarUsuario"
+        app:layout_constraintLeft_toRightOf="@id/btn_Logar"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBaixo"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CampoSenha" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineTopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="475dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineBaixo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="149dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Me Empresta Ai</string>
+    <string name="Usuário">textView_NomeUsuario</string>
+    <string name="textView_Senha">Senha</string>
+    <string name="textView_Usuario">Usuário</string>
+    <string name="editText_NomeUsuario">Nome de Usuário</string>
+    <string name="btn_Logar">Login</string>
+    <string name="editText_CampoSenha">Sua Senha</string>
+    <string name="btn_CadastrarUsuario">Cadastrar</string>
+    <string name="btnVoltarCadastro">Voltar</string>
+    <string name="title_activity_tela_cadastro_usuario">Cadastro de Usuário</string>
+    <string name="btn_VoltarCadastroUsuario">Voltar</string>
+    <string name="btnConcluirCadastroUsuario">Salvar</string>
+    <string name="textViewNomeUsuario">Nome</string>
+    <string name="textViewSobreNomeUsuario">Sobrenome</string>
+    <string name="editText_CampoNome">Fulano...</string>
+    <string name="editText_CampoSobrenome">Zoeira dos Anzóis</string>
+    <string name="textViewNascimento">Nascimento</string>
+    <string name="editText_CampoNascimento">dd/MM/YYYY</string>
+    <string name="textViewRG">RG</string>
 </resources>
