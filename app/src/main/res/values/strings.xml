@@ -18,4 +18,9 @@
     <string name="textViewNascimento">Nascimento</string>
     <string name="editText_CampoNascimento">dd/MM/YYYY</string>
     <string name="textViewRG">RG</string>
+    <string name="textViewCPF">CPF</string>
+    <string name="textViewCidade">Cidade</string>
+    <string name="textViewEstado">Estado</string>
+    <string name="textViewEmail">E-mail</string>
+    <string name="textViewSenhaUserNovo">Senha</string>
 </resources>
