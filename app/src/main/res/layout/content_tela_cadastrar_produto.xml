@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Telas.TelaCadastrarProduto"
+    tools:showIn="@layout/activity_tela_cadastrar_produto">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="335dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineTopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="33dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineBaixo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="434dp" />
+
+    <Button
+        android:id="@+id/btnPularCadastrarProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnPularCadastrarProduto"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBaixo"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintLeft_toRightOf="@id/btnConfirmarCadastroDeProduto"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopo"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <Button
+        android:id="@+id/btnConfirmarCadastroDeProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btnConfirmarCadastroDeProduto"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBaixo"
+        app:layout_constraintEnd_toStartOf="@+id/btnPularCadastrarProduto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopo"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <TextView
+        android:id="@+id/textViewNomeProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textViewNomeProduto"
+        app:layout_constraintBottom_toTopOf="@id/textViewValorItem"
+        app:layout_constraintRight_toLeftOf="@id/editText_CampoNomeItem"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopo" />
+
+    <EditText
+        android:id="@+id/editText_CampoNomeItem"
+        android:layout_width="206dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/editText_CampoNomeItem"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/textViewNomeProduto"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopo" />
+
+    <TextView
+        android:id="@+id/textViewValorItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/textViewValorItem"
+        app:layout_constraintBottom_toTopOf="@id/textViewDescricaoItem"
+        app:layout_constraintRight_toLeftOf="@id/editText_CampoValorItem"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeProduto" />
+
+    <EditText
+        android:id="@+id/editText_CampoValorItem"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewValorItem"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopo" />
+
+    <TextView
+        android:id="@+id/textViewDescricaoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/textViewDescricaoItem"
+        app:layout_constraintRight_toLeftOf="@id/editText_CampoDescricaoItem"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValorItem" />
+
+    <EditText
+        android:id="@+id/editText_CampoDescricaoItem"
+        android:layout_width="208dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toEndOf="@+id/textViewDescricaoItem"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopo" />
+
+</android.support.constraint.ConstraintLayout>

@@ -23,4 +23,13 @@
     <string name="textViewEstado">Estado</string>
     <string name="textViewEmail">E-mail</string>
     <string name="textViewSenhaUserNovo">Senha</string>
+    <string name="title_activity_tela_cadastrar_produto">Cadastrar Produto</string>
+    <string name="btnPularCadastrarProduto">Mais Tarde</string>
+    <string name="btnConfirmarCadastroDeProduto">ok</string>
+    <string name="title_activity_tela_inicial">Início</string>
+    <string name="textViewNomeProduto">Nome do item</string>
+    <string name="editText_CampoNomeItem">Ex.: Bicicleta</string>
+    <string name="textViewValorItem">Valor</string>
+    <string name="textViewDescricaoItem">Descrição</string>
+    <string name="textViewMensagemContinuacao">Continua...</string>
 </resources>

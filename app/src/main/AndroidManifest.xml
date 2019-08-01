@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Telas.TelaInicial"
+            android:label="@string/title_activity_tela_inicial"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Telas.TelaCadastrarProduto"
+            android:label="@string/title_activity_tela_cadastrar_produto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Telas.TelaCadastroUsuario"
             android:label="@string/title_activity_tela_cadastro_usuario"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

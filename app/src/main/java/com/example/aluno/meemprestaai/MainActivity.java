@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.aluno.meemprestaai.Telas.TelaCadastrarProduto;
 import com.example.aluno.meemprestaai.Telas.TelaCadastroUsuario;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if(Login.equals("Marcos") && Senha.equals("Uespi")){
                     alertLogin("Login Realizado Com Sucesso!");
+                    Intent intentMainAcessaCadastroProdutos = new Intent(MainActivity.this, TelaCadastrarProduto.class);
+                    startActivity(intentMainAcessaCadastroProdutos);
                 }else{
                     alertLogin("Login ou Senha Incorretos!");
                 }
@@ -42,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
         btnCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentMain = new Intent(MainActivity.this, TelaCadastroUsuario.class);
-                startActivity(intentMain);
+                Intent intentMainCadastroUsuario = new Intent(MainActivity.this, TelaCadastroUsuario.class);
+                startActivity(intentMainCadastroUsuario);
             }
         });
     }
     private void alertLogin(String s){
-        Toast.makeText(this,s, Toast.LENGTH_LONG).show();
+        Toast.makeText(this,s, Toast.LENGTH_SHORT).show();
     }
 }

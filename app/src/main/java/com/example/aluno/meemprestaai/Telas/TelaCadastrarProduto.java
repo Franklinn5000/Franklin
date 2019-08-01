@@ -9,15 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.aluno.meemprestaai.MainActivity;
 import com.example.aluno.meemprestaai.R;
 
-public class TelaCadastroUsuario extends AppCompatActivity {
+public class TelaCadastrarProduto extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_cadastro_usuario);
+        setContentView(R.layout.activity_tela_cadastrar_produto);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -30,24 +29,24 @@ public class TelaCadastroUsuario extends AppCompatActivity {
             }
         });
 
-        Button btnVoltar = findViewById(R.id.btnVoltarCadastroUsuario);
-        Button btnSalvar = findViewById(R.id.btnConcluirCadastroUsuario);
+        Button btnPularCadastroProduto = findViewById(R.id.btnPularCadastrarProduto);
+        Button btnOkcadastrarproduto = findViewById(R.id.btnConcluirCadastroUsuario);
 
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
+        btnPularCadastroProduto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_VoltarCadastroUsuario = new Intent(TelaCadastroUsuario.this, MainActivity.class);
-                startActivity(intent_VoltarCadastroUsuario);
+                Intent intentCadastrarProduto = new Intent(TelaCadastrarProduto.this,TelaInicial.class);
+                startActivity(intentCadastrarProduto);
             }
         });
 
-        btnSalvar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentConcluiCadastroUsuario = new Intent(TelaCadastroUsuario.this,MainActivity.class);
-                startActivity(intentConcluiCadastroUsuario);
-            }
-        });
+//        btnOkcadastrarproduto.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intentProdutoCadastrado = new Intent(TelaCadastrarProduto.this, TelaInicial.class);
+//                startActivity(intentProdutoCadastrado);
+//            }
+//        });
     }
 
 }
